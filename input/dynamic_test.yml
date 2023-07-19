@@ -1,0 +1,9 @@
+name: "dynamic_test"
+testcase: 
+  - file: "t4r50.yml"
+    name: "dta_con.csv"
+    change:
+        comm: [30,30,3]
+        prob: [0,75,5]
+    max_iter: 1
+repeat: 1

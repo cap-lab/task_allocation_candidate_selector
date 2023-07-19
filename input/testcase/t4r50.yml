@@ -1,0 +1,27 @@
+robot:
+    capa: 1
+    cons: 4
+    prob: 5
+    num: 50
+    comm: 5
+task:
+    - name: 0
+      load: 4
+      requ: 1
+      weig: 1
+      crit: 3
+    - name: 1
+      load: 1
+      requ: 1
+      weig: 1
+      crit: 1
+    - name: 2
+      load: 4
+      requ: 1
+      weig: 1
+      crit: 2
+    - name: 3
+      load: 16
+      requ: 1
+      weig: 1
+      crit: 3
