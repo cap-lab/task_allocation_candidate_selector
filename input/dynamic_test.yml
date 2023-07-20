@@ -1,6 +1,6 @@
 name: "dynamic_test"
 testcase: 
-  - file: "t4r50.yml"
+  - file: "../input/testcase/t4r50.yml"
     name: "dta_con.csv"
     change:
         comm: [30,30,3]
