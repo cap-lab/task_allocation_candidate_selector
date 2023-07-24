@@ -1,19 +1,19 @@
 Author: wecracy <wecracy@snu.ac.kr>  
 Date: 20/07/2023
 
-*** INTRODUCTION ***
+# INTRODUCTION
 
 This package is for generating candidate task configurations  
 for example "Task Allocation Algorithm Simulation" at  
 https://github.com/cap-lab/argos3-examples.  
   
-*** REQUIREMENT ***  
+# REQUIREMENT
   
 Your computer should have Python 3.* to run this package.  
 The followings are the required Python packages.  
 json, multiprocessing, math, random, PyYAML  
   
-*** HOW TO RUN ***  
+# HOW TO RUN
   
 The default commands for running the package are the following.  
 ```console
@@ -41,7 +41,7 @@ with "-o" option.
 python main.py -o new_output_file_name
 ```
   
-*** HOW TO ADD A NEW COMPILE-TIME CANDIDATE SELECTOR ***  
+# HOW TO ADD A NEW COMPILE-TIME CANDIDATE SELECTOR
   
 You can add a new compile-time selector by making a new class.  
 The new class should have a "compile_time_allocate(self,  
