@@ -3,14 +3,13 @@ import random
 class Allocator:
     def __parameter_init(self, task_list):
         max_ratio = 0
-        min_ratio = 1
+        max2_ratio = 0
         for task in task_list:
             task_ratio = 1/task['min']
-            if max_ratio < task_ratio:
+            if max_ratio <= task_ratio:
+                max2_ratio = max_ratio
                 max_ratio = task_ratio
-            if min_ratio > task_ratio:
-                min_ratio = task_ratio
-        threshold = (max_ratio + min_ratio)
+        threshold = 0.65*(max_ratio + max2_ratio)
         return threshold
 
     def compile_time_allocate(self, robot_list, task_list):
